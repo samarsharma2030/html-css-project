@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+} 
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#left{
+    position: relative;
+     width: 40%;
+     height: 100%;
+}
+
+#left-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#left-nav-right{
+    display: flex;
+    align-items: center;
+}
+
+#left-nav-right a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500 ;
+    font-size: 14px;
+}
+
+#left-nav-right i{
+    color: royalblue;
+}
+
+#left #text-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#text-center h1{
+    font-size: 120px;
+    font-weight: 900;
+}
+
+#text-center p{
+     opacity: .6;
+     font-size: 12px;
+     line-height: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+#text-center a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+
+#right-top{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: royalblue;
+}
+
+#right-bottom{
+    width: 100%;
+    height: 50%;
+    background-color: mediumseagreen;
+    background-image: url(vegetables.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#right-top-left{
+    width: 55%;
+    height: 100%;
+    background-image: url(apple.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#right-top-right{
+    width: 45%;
+    height: 100%;
+    background-image: url(orange.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
